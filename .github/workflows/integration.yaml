@@ -1,0 +1,35 @@
+name: Integration
+on:
+  push:
+    branches:
+      - master
+  
+jobs:
+  preparation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: preparation
+        run: echo "Preparing to deploy ..."
+    
+      - name: checks out the repository
+        uses: actions/checkout@v4
+
+      - name: "Logs into docker"
+        uses: docker/login-action@v3
+        with:
+            username: ${{ secrets.DOCKERHUB_USERNAME }}
+            password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: "Build our code"
+        env:
+          IMAGE_NAME: cyclobold
+          VERSION: latest
+          USERNAME: theoafactor
+        run: |
+            docker build -t $USERNAME/$IMAGE_NAME:$VERSION .
+            docker push $USERNAME/$IMAGE_NAME:$VERSION
+
+        
+
+          
+
+    
