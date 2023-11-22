@@ -12,8 +12,8 @@ jobs:
               run: "sudo docker rm -f cyclobold || true"
 
             - name: "Get the code from Docker Hub"
-              run: "sudo docker pull theoafactor/cyclobold:latest"
+              run: "sudo docker pull jadesolax/cyclobold:latest"
 
             - name: "Run the image as a container"
-              run: "sudo docker run -d -p 80:80 --name cyclobold theoafactor/cyclobold:latest"
+              run: "sudo docker run -d -p 80:80 --name cyclobold jadesolax/cyclobold:latest"
              

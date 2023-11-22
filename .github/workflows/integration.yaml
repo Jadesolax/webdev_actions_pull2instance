@@ -23,7 +23,7 @@ jobs:
         env:
           IMAGE_NAME: cyclobold
           VERSION: latest
-          USERNAME: theoafactor
+          USERNAME: jadesolax
         run: |
             docker build -t $USERNAME/$IMAGE_NAME:$VERSION .
             docker push $USERNAME/$IMAGE_NAME:$VERSION
