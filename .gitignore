@@ -1,6 +1,8 @@
-*terra
+.terraform.*
 *.terraform
 terraform.*
 *.terra
 *testkey
-*awskey
+awskey_rsa
+awskey_rsa.pub
+.terraform.lock.hcl
