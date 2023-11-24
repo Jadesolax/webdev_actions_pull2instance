@@ -2,7 +2,8 @@
 *.terraform
 terraform.*
 *.terra
-*testkey
+testkey
+testkey.pub
 awskey_rsa
 awskey_rsa.pub
 .terraform.lock.hcl
