@@ -21,7 +21,7 @@ resource  "aws_key_pair" "awskey" {
      public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDADlN5XdpC5ipy7nWYMEVgm/IAievA5M91porkjLt9bm9x6x/xRMZvZNn69hfylUmn84en0qCf7OZ9CoWX0BymMXAOd44DH6ZpBV4GcM6Zmxd4MgYHAvnRrGEE0EN2VuLIwkERusJlnez1muQXE65IL8wUP85/yvRxFfZhJtxQWQNgwPKG3v3WK/+5CnhAlG21TtKi3FbeFAUT5tBhr8YOR00myJ467CSys/+3RFp2o+pHzpU5ouIf8yEZiaFysgcJzS7fmu0hzqv7usIu+TMsfIGnsfLUOEJHYWFEyUP5pFuu75BNUV1F+H0geTkUlgtaMgYDJI7zhlBArAYCMoobz1sItRLAyDESzHcp114zZ7eJsTpS47wDh8OKjNn2PKnLXvNo/1npiooKJNgoCA8P2bBG75qsk026EHI8AZzEL4sTZPn4xS921vx5CA7WU0/1EbTSUgywu3u3PtOhBCmWVqrF/WTTvEKgIVUdHi/wkDbTD5j+BKls7GqRmpqv8+E= jade@Jades-MBP"
 }
 
-//save the private key comment
+//save the private key comment  
 #   resource  "local_file" "storing_baby_pem"{
 #       content = tls_private_key.babykey.private_key_pem
 #       filename = aws_key_pair.babykey_key_pair.key_name 
